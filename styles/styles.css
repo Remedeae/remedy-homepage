@@ -1,0 +1,68 @@
+body {
+  color: rgb(174, 144, 115);
+  background-color: RGB(243, 242, 242);
+  font-family: monospace;
+}
+/*p, a, input, button{
+  font-family: monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: monospace;
+}*/
+a:visited {
+  color: rgb(143, 117, 93);
+}
+a:hover {
+  color: rgb(182, 135, 103);
+}
+a {
+  color:rgb(186, 164, 149)
+}
+a:visited.column-list { /*???*/
+  color: rgb(243, 242, 242);
+}
+.row {
+  background-color: rgb(218, 194, 167);
+  color: rgb(243, 242, 242)
+}
+.column {
+    float: left;
+    width: 25%;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#presentation {
+    display: inline;
+
+  }
+.social-media {
+  text-align: center;
+  float: right;
+  background-color:rgb(218, 194, 167);
+  color: rgb(243, 242, 242);
+  width: 120px;
+  border-radius: 20px;
+  /*margin-right: 0px;
+  margin-left: auto;*/
+  padding: 5px 20px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  /*padding-bottom: 100%;*/
+}
+img {
+  border-color: red; /*?????????*/
+  border-width: 10px;
+}
+
+
+
+
+
+
+  footer {
+    color: rgb(146, 146, 146);
+}
