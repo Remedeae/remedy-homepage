@@ -13,41 +13,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
   color: rgb(168, 148, 128);
 }
-a:visited {
-  color: rgb(170, 145, 123);
-}
-a:hover {
-  color: rgb(182, 135, 103);
-}
-a {
-  color:rgb(186, 164, 149)
-}
+  a:visited {
+    color: rgb(170, 145, 123);
+  }
+  a:hover {
+    color: rgb(182, 135, 103);
+  }
+  a {
+    color:rgb(186, 164, 149)
+  } 
+
+
 a.column-list:visited{ /*IT WORKS!!!!! YESSSSS!!!*/
   color: rgb(243, 242, 242);
 }
-.row {
-  background-color: rgb(218, 194, 167);
-  color: rgb(243, 242, 242)
-}
-.column {
+  .row {
+    background-color: rgb(218, 194, 167);
+    color: rgb(243, 242, 242)
+  }
+  .column {
     float: left;
     width: 25%;
   }
-.row:after {
+  .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-.presentation {
-    display: inline;
-  }
-legend + p {
-  margin-top: -10px; /*Michelle! Here I want to reduce the space
-                      between the h3 and the p, I can apply it to
-                      h3 but that looks wonky.*/
-  padding-top: -10px;
-}
 
 .social-media {
   text-align: center;
@@ -64,14 +57,29 @@ legend + p {
   display: inline-block;
 }
 
-.project-cosplay-pic {
-  margin: -10px 0px;
-  width: 800px;
+.presentation {
+  display: inline;
+}
+  legend + p {
+  margin-top: -10px; /*Michelle! Here I want to reduce the space
+                    between the h3 and the p, I can apply it to
+                    h3 but that looks wonky.*/
+  padding-top: -10px;
+  }
+
+h3.current-project {
+  margin-bottom: -10px;
+}
+  .project-cosplay-pic {
+    margin: -10px 0px;
+    width: 800px;
+  }
+
+h4.contact-info{
+  margin-bottom: -10px;
 }
 
 
-
-
-  footer {
+footer {
     color: rgb(143, 129, 121);
 }
