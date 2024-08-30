@@ -1,4 +1,4 @@
-body {
+body{
   color: rgb(195, 155, 117);
   background-color: RGB(243, 242, 242);
   font-family: monospace;
@@ -42,6 +42,12 @@ a.column-list:visited{ /*IT WORKS!!!!! YESSSSS!!!*/
 .presentation {
     display: inline;
   }
+legend + p {
+  margin-top: -10px; /*Michelle! Here I want to reduce the space
+                      between the h3 and the p, I can apply it to
+                      h3 but that looks wonky.*/
+  padding-top: -10px;
+}
 
 .social-media {
   text-align: center;
