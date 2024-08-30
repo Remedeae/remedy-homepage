@@ -1,16 +1,20 @@
 body {
-  color: rgb(174, 144, 115);
+  color: rgb(195, 155, 117);
   background-color: RGB(243, 242, 242);
   font-family: monospace;
 }
-p, a, input, button{
+p, a, input, button{ /*now how to add other fonts?*/
   font-family: monospace;
+}
+h1{
+  text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
+  color: rgb(168, 148, 128);
 }
 a:visited {
-  color: rgb(143, 117, 93);
+  color: rgb(170, 145, 123);
 }
 a:hover {
   color: rgb(182, 135, 103);
@@ -18,7 +22,7 @@ a:hover {
 a {
   color:rgb(186, 164, 149)
 }
-a:visited.column-list { /*How could this work?*/
+a.column-list:visited{ /*IT WORKS!!!!! YESSSSS!!!*/
   color: rgb(243, 242, 242);
 }
 .row {
@@ -38,9 +42,6 @@ a:visited.column-list { /*How could this work?*/
 .presentation {
     display: inline;
   }
-p.presentation {
-  padding: 100px; /*This doesn't happen!*/
-}
 
 .social-media {
   text-align: center;
