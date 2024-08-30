@@ -3,12 +3,12 @@ body {
   background-color: RGB(243, 242, 242);
   font-family: monospace;
 }
-/*p, a, input, button{
+p, a, input, button{
   font-family: monospace;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: monospace;
-}*/
+  font-family: sans-serif;
+}
 a:visited {
   color: rgb(143, 117, 93);
 }
@@ -18,7 +18,7 @@ a:hover {
 a {
   color:rgb(186, 164, 149)
 }
-a:visited.column-list { /*???*/
+a:visited.column-list { /*How could this work?*/
   color: rgb(243, 242, 242);
 }
 .row {
@@ -34,10 +34,14 @@ a:visited.column-list { /*???*/
     display: table;
     clear: both;
   }
-#presentation {
-    display: inline;
 
+.presentation {
+    display: inline;
   }
+p.presentation {
+  padding: 100px; /*This doesn't happen!*/
+}
+
 .social-media {
   text-align: center;
   float: right;
@@ -51,18 +55,16 @@ a:visited.column-list { /*???*/
   margin-left: 20px;
   margin-right: 20px;
   display: inline-block;
-  /*padding-bottom: 100%;*/
-}
-img {
-  border-color: red; /*?????????*/
-  border-width: 10px;
 }
 
-
+.project-cosplay-pic {
+  margin: -10px 0px;
+  width: 800px;
+}
 
 
 
 
   footer {
-    color: rgb(146, 146, 146);
+    color: rgb(143, 129, 121);
 }
