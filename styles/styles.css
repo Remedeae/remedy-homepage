@@ -1,35 +1,50 @@
 body{
-  color: rgb(195, 155, 117);
-  background-color: RGB(243, 242, 242);
-  font-family: monospace;
+  color: rgb(53, 53, 53);
+  background-color: rgb(240, 214, 187);
+  margin: 50px
 }
+
 p, a, input, button{ /*now how to add other fonts?*/
-  font-family: monospace;
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 h1{
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-  color: rgb(168, 148, 128);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(53, 53, 53);
 }
   a:visited {
-    color: rgb(170, 145, 123);
+    color: rgb(188, 148, 112);
   }
   a:hover {
     color: rgb(182, 135, 103);
   }
   a {
-    color:rgb(186, 164, 149)
+    color:rgb(115, 100, 92);
   } 
 
-
-a.column-list:visited{ /*IT WORKS!!!!! YESSSSS!!!*/
-  color: rgb(243, 242, 242);
+a.column-list{
+  color: rgb(53, 53, 53);
 }
+  ul.column-list {
+    padding-left: 25px;
+  }
+  h2.column-head {
+    margin-left: 40px;
+  }
+  div.column {
+    max-width: 200px;
+  }
   .row {
-    background-color: rgb(218, 194, 167);
-    color: rgb(243, 242, 242)
+    background-color: rgb(160, 138, 127);
+    color: rgb(53, 53, 53)
   }
   .column {
     float: left;
@@ -41,16 +56,14 @@ a.column-list:visited{ /*IT WORKS!!!!! YESSSSS!!!*/
     clear: both;
   }
 
-
 .social-media {
   text-align: center;
   float: right;
-  background-color:rgb(218, 194, 167);
-  color: rgb(243, 242, 242);
+  background-color:rgb(160, 138, 127);
+  color: rgb(53, 53, 53);
+  font-size: 17px;
   width: 120px;
   border-radius: 20px;
-  /*margin-right: 0px;
-  margin-left: auto;*/
   padding: 5px 20px 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -60,26 +73,34 @@ a.column-list:visited{ /*IT WORKS!!!!! YESSSSS!!!*/
 .presentation {
   display: inline;
 }
-  legend + p {
-  margin-top: -10px; /*Michelle! Here I want to reduce the space
-                    between the h3 and the p, I can apply it to
-                    h3 but that looks wonky.*/
-  padding-top: -10px;
+  .background {
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 5px;
   }
 
 h3.current-project {
   margin-bottom: -10px;
 }
   .project-cosplay-pic {
-    margin: -10px 0px;
-    width: 800px;
+    margin: -10px 0px 0px;
+    width: 100%;
+    max-width: 800px;
   }
 
 h4.contact-info{
   margin-bottom: -10px;
 }
-
+  .send-btn {
+    color: rgb(53, 53, 53);
+    background-color: rgb(160, 138, 127);
+    border-radius: 5px;
+  }
+  .send-btn:hover {
+    background-color: rgb(188, 148, 112);
+  }
 
 footer {
     color: rgb(143, 129, 121);
+    margin-top: 30px;
 }
