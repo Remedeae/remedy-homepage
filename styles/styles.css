@@ -1,14 +1,13 @@
 body{
   color: rgb(53, 53, 53);
   background-color: rgb(240, 214, 187);
-  margin: 50px
+  padding: 3vh 10vw;
 }
 
-p, a, input, button{ /*now how to add other fonts?*/
+p, a, input, button{
   font-family: "Alice", serif;
   font-weight: 400;
   font-style: normal;
-  
 }
 h1{
   text-align: center;
@@ -28,53 +27,62 @@ h1, h2, h3, h4, h5, h6 {
   }
   a {
     color:rgb(115, 100, 92);
-  } 
+  }
 
-a.column-list{
+  
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 1vh 3vw;
+  background-color: rgb(160, 138, 127);
+  border: 1px solid rgb(53, 53, 53);
+  box-sizing: border-box;
+}
+.nav-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 11vw;
+}
+.nav-block > h2 {
+  margin-bottom: 10px;
+}
+.nav-block > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+a.nav-link{
   color: rgb(53, 53, 53);
 }
-  ul.column-list {
-    padding-left: 25px;
-  }
-  h2.column-head {
-    margin-left: 40px;
-  }
-  div.column {
-    max-width: 200px;
-  }
-  .row {
-    background-color: rgb(160, 138, 127);
-    color: rgb(53, 53, 53)
-  }
-  .column {
-    float: left;
-    width: 25%;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
+
+.main-content{
+  padding: 0 3vw;
+}
+.main-content__container {
+  display: flex;
+  justify-items: start;
+}
 .social-media {
+  justify-self: end;
+  align-self: start;
   text-align: center;
-  float: right;
   background-color:rgb(160, 138, 127);
   color: rgb(53, 53, 53);
   font-size: 17px;
   width: 120px;
   border-radius: 20px;
+  box-shadow: 2px 5px 5px rgb(53, 53, 53);
   padding: 5px 20px 20px;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  display: inline-block;
 }
-
 .presentation {
-  display: inline;
 }
   .background {
-    display: block;
     margin-top: -15px;
     margin-bottom: 5px;
   }
@@ -82,7 +90,7 @@ a.column-list{
 h3.current-project {
   margin-bottom: -10px;
 }
-  .project-cosplay-pic {
+  .project__cosplay-pic {
     margin: -10px 0px 0px;
     width: 100%;
     max-width: 800px;
@@ -104,5 +112,5 @@ h4.contact-info{
 
 footer {
     color: rgb(143, 129, 121);
-    margin-top: 30px;
+    margin-top: 5vh;
 }
