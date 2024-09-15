@@ -4,46 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remedy Creative</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap" rel="stylesheet">
-</head>
+    <script src="https://kit.fontawesome.com/3b69314bf3.js" crossorigin="anonymous"></script>
+ </head>
 <body>
+  <nav>
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <form action="">
+        <input type="text" name="Search" class="search-bar" placeholder="Search">
+      </form>
+    </div>
+    <ul><!--Remember to link to the other pages!-->
+      <li class="nav__content">
+        <button class="nav__content-btn">Cosplay</button>
+        <div class="nav__dropdown-content">
+          <a href="pages/cosplay/cosplay_gallery.html">Cosplay Gallery</a>
+          <a href="#">Current Project</a>
+        </div>
+      </li>
+      <li class="nav__content">
+        <button class="nav__content-btn">Artwork</button>
+        <div class="nav__dropdown-content">
+          <a href="pages/art/art_gallery.html">Art Gallery</a>
+          <a href="pages/art/commissions.html">Commissions</a>
+        </div>
+      </li>
+      <li class="nav__content">
+          <button class="nav__content-btn">
+            <a href="pages/comics/comics.html">Comics</a>
+          </button>
+      </li>
+      <li class="nav__content">
+          <button class="nav__content-btn">
+            <a href="pages/blog/blog.html">Blog</a>
+          </button>
+      </li>
+    </ul>
+  </nav>
   <header>
       <h1> <strong>Remedy's Creative Couldron</strong>
       </h1>
   </header>
-  <nav><!--Remember to link to the other pages!-->
-    <div class="nav-block">
-      <h2>Cosplay</h2>
-      <ul>
-        <li><a class="nav-link" href="#">Cosplay Overview</a></li>
-        <li><a class="nav-link" href="#">Current project WIP</a></li>
-      </ul>
-    </div>
-    <div class="nav-block">
-      <h2>Artwork</h2>
-      <ul>
-        <li><a class="nav-link" href="#">Gallery</a></li>
-        <li><a class="nav-link" href="#">Commissions</a></li>
-        </ul>
-    </div>
-    <div class="nav-block">
-      <h2>Comics</h2>
-        <ul>
-          <li><a class="nav-link" href="#">World of Warcraft</a></li>
-          <li><a class="nav-link" href="#">Remi and Stickweeds</a> <!--NSFW--></li>
-        </ul>
-    </div>
-    <div class="nav-block">
-      <h2>Blog</h2>
-      <ul>
-        <li><a class="nav-link" href="#">Posts</a></li>
-        <li><a class="nav-link" href="#">All projects backlog</a></li>
-      </ul>
-    </div>
-  </nav>
+
     <!--Pages to make: Cosplay+art+comics+blogg/current project-->
     <!--Banner!-->
   <div class="main-content">
@@ -84,9 +91,9 @@
         <aside class="social-media">
           <p> Follow me on social media!</p>
           <a href="https://www.instagram.com/remedycosplay/">
-            <img src="images/Instagram_Glyph_White.png" width="100px" alt="Instagram Logo"></a>
+            <img class="link_icon" src="images/Instagram_Glyph_White.png" width="100px" alt="Instagram Logo"></a>
           <a href="https://www.facebook.com/remedycosplay">
-            <img src="images/Facebook_Logo_Primary.png" width="100px" alt="Facebook Logo"></a>
+            <img class="link_icon" src="images/Facebook_Logo_Primary.png" width="100px" alt="Facebook Logo"></a>
         </aside>
     </div>   
     <section class="current-project">
